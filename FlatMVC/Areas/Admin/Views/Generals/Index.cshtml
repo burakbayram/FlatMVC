@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Entity.General>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LogoURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SiteTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SiteDesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HeaderTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HeaderDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CTA1_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CTA1_Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CTA2_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CTA2_Button)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LogoURL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SiteTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SiteDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HeaderTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HeaderDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CTA1_Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CTA1_Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CTA2_Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CTA2_Button)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

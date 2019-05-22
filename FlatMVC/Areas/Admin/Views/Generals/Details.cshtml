@@ -1,0 +1,115 @@
+﻿@model Entity.General
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>General</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LogoURL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LogoURL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SiteTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SiteDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeaderTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeaderTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeaderDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeaderDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTA1_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTA1_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTA1_Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTA1_Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTA2_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTA2_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTA2_Button)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTA2_Button)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

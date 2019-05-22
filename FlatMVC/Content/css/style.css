@@ -1,0 +1,1112 @@
+/*
+
+	01. Key Frames & Font Face
+	02. Generals Settings
+	03. Navigation
+	04. Header Section Settings
+	05. Works Section Settings
+	06. Intersection Section Settings
+	07. Services Section Settings
+	08. Team Section Settings
+	09. Get The Template Interection Settings
+	10. Footer Contact Section Settings
+	11. Footer Intersection Settings
+	12. Footer Contact Info Settings
+	13. Media Queries for Mobile Settings
+	14. Media Queries for iPad/Tablet Settings
+			
+*/
+
+
+/* 01. KEY FRAMES FADE IN & FONT FACE ================================================== */
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato/lato-reg-webfont.eot');
+    src: url('../fonts/lato/lato-reg-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-reg-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-reg-webfont.ttf') format('truetype'),
+         url('../fonts/lato/lato-reg-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato/lato-lig-webfont.eot');
+    src: url('../fonts/lato/lato-lig-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-lig-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-lig-webfont.ttf') format('truetype'),
+         url('../fonts/lato/lato-lig-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato/lato-bol-webfont.eot');
+    src: url('../fonts/lato/lato-bol-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-bol-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-bol-webfont.ttf') format('truetype'),
+         url('../fonts/lato/lato-bol-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@-webkit-keyframes Anim { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes Anim { from { opacity:0; } to { opacity:1; } }
+@keyframes Anim { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-it {
+    -webkit-animation:Anim ease-in 1;
+    -moz-animation:Anim ease-in 1;
+    animation:Anim ease-in 1;
+    opacity: 0;
+    filter: alpha(opacity=70);
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-duration:4s;
+    -moz-animation-duration:4s;
+    animation-duration:4s;}
+ 
+.fade-it {
+	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay: 0.6s;
+	animation-delay: 0.6s;}
+	
+@-webkit-keyframes Anim2 { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes Anim2 { from { opacity:0; } to { opacity:1; } }
+@keyframes Anim2 { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-it2 {
+    -webkit-animation:Anim2 ease-in 1;
+    -moz-animation:Anim2 ease-in 1;
+    animation:Anim2 ease-in 1;
+    opacity: 0;
+    filter: alpha(opacity=70);
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;}
+ 
+.fade-it2 {
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+	animation-delay: 0.2s;}
+
+
+	
+/* 02. GENERALS SETTINGS ================================================== */
+
+
+
+/* Selected text Color */
+
+::-moz-selection{background:#6ec5e2;color:white}
+::selection{background:#6ec5e2;color:white}
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.15538em; padding-bottom: 0.273em; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #aaa; }
+
+body { 
+	background: #FFF;  
+	width:100%;
+	height:100%;
+	font-size:14px;
+	font-family: 'latoregular', sans-serif; }
+
+.centered {
+	text-align: center;}
+
+.clear {
+	padding: 20px;}
+
+h1 {
+  	font-family: 'latobold', sans-serif;
+  	text-transform: uppercase;
+  	margin: 0.75em 0.75em 0.25em;}
+
+h2 {
+  	font-family: 'latobold', sans-serif;
+  	text-transform: uppercase;
+  	margin-top: 0.33em;}
+  
+h3 {    
+	background: url("../img/line.gif") no-repeat scroll center 55px transparent;
+	color: #4D4C4C;
+	font:16px 'latobold', sans-serif;
+	letter-spacing: 2px;
+	padding-bottom: 35px;
+	padding-top: 25px;
+	text-align: center;
+	text-transform: uppercase;}
+
+h4 {    
+    color: #4D4C4C;
+    font: 14px 'latolight', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;}
+
+
+.lead {
+	color:#686868;}
+	
+/* Link */
+
+a {
+  	color: #FFF;
+  	text-decoration: none;}
+
+a:hover {
+	color: #e5e5e5;}  
+	
+/* Paragrah */
+
+p a {
+	color:#aaa;
+	border-bottom: 1px dotted #888;
+	-webkit-transition: all 0.5s ease-out;
+  	-moz-transition: all 0.5s ease-out;
+  	-o-transition: all 0.5s ease-out;
+  	transition: all 0.5s ease-out;}
+
+p a:hover {
+	color:#333;}
+
+/* Button */
+
+.buttom {
+	margin-top: 200px;
+	background: #a0cac0;
+    border-bottom: 4px solid #68a697;
+    color: #FFFFFF;
+    font-family: 'latolight', sans-serif;
+    text-transform: uppercase;
+    padding:15px 20px;
+    font-size: 16px;
+    line-height: 50px;
+    min-width: 150px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-out;
+  	-moz-transition: all 0.2s ease-out;
+  	-o-transition: all 0.2s ease-out;
+  	transition: all 0.2s ease-out;}
+
+.buttom:hover {
+	background: #93b7ae;
+	color:#FFF;}
+
+
+
+/* 03. NAVIGATION ================================================== */
+
+
+
+nav #logo {
+	float:left;
+	z-index: 99999;
+	}
+	
+nav {
+	z-index: 999;
+	width: 100%;
+	height: 80px;
+	background: #FFF;}
+
+
+/* Some stylesheet reset */
+#nav, #nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* The main navigation bar */
+#nav {
+	width: 100%; /* The menu will take the width of its container */}
+
+#nav>li {
+	float: right;
+	position: relative;
+	padding: 10px 0;}
+
+/* The main navigation links */
+#nav>li>a {
+	/* Layout */
+	display: block;
+	padding: 0px 0px 0 30px;
+
+	/* Typography */
+	font-family: 'latolight', sans-serif;
+	font-size: 16px;
+	color: #333;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	/* Transitions */
+	-webkit-transition: color .2s ease-in, border-top-color .2s ease-in;
+	-ms-transition: color .2s ease-in, border-top-color .2s ease-in;
+	-moz-transition: color .2s ease-in, border-top-color .2s ease-in;
+	-o-transition: color .2s ease-in, border-top-color .2s ease-in;
+	transition: color .2s ease-in, border-top-color .2s ease-in;}
+
+/* The hover state of the links */
+#nav li:hover a, #nav li .selected {
+	color: #E95855;}
+
+#nav>li.dropdown>a {
+	padding-right: 28px;}
+
+/* The arrow indicating a dropdown menu */
+.dropdown>a::after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 0;
+	width: 0;
+	border: 4px solid transparent;
+	border-top-color: inherit;
+	right: 11px;
+	top: 21px;}
+
+/*  The submenus */
+#nav ul {
+	display: block;
+	position: absolute;
+	top: 43px;
+	left: -9999px;
+	opacity: 0;
+	background: #272727;
+	cursor: pointer;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-webkit-transition: opacity .22s ease-in;
+	-ms-transition: opacity .22s ease-in;
+	-moz-transition: opacity .22s ease-in;
+	-o-transition: opacity .22s ease-in;
+	transition: opacity .22s ease-in;}
+
+#nav ul li {
+	display: block;
+	position: absolute;
+	height: 0px;
+	-webkit-transition: height .15s ease-in;
+	-ms-transition: height .15s ease-in;
+	-moz-transition: height .15s ease-in;
+	-o-transition: height .15s ease-in;
+	transition: height .15s ease-in;}
+
+/* The submenu appears when its parent is hovered */
+#nav>li:hover>ul {
+	left: 0px;
+	opacity: 1;}
+
+#nav li:hover>ul>li {
+	position: relative;
+	height: 31px;}
+
+/* The submenu links */
+#nav ul li a {
+	/* Layout */
+	display: block;
+	padding: 7px 12px 7px 22px;
+	width: 130px;
+
+	/* Typography */
+	font-family: 'latolight', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	color: #aaa;
+	
+	/* Background & effects */
+	background: #FFF;
+	-webkit-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	-ms-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	-moz-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	-o-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	transition: color .2s ease-in, border-left-color .2s ease-in;;}
+
+/* Rounded corners for the last submenu link */
+#nav ul>li:last-child>a {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;}
+
+/* Changing the link color on hover */
+#nav ul li:hover>a {
+	color: #fff;}
+ 
+.cbp-af-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #FFF;
+	z-index: 10000;
+	height: 120px;
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;}
+
+/* FOR REDUCING THE HEIGHT OF THE NAVIGATION */
+
+.cbp-af-header #logo {
+	padding:30px 30px 0px 0px; 
+	width:90px;}
+
+.cbp-af-header #nav a {
+	line-height: 100px;}
+
+.cbp-af-header.cbp-af-header-shrink #logo { 
+	padding:20px 20px 0px 0px; 
+	width:60px;}
+
+/* Transitions and class for reduced height */
+
+.cbp-af-header #logo,
+.cbp-af-header #nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;}
+
+.cbp-af-header.cbp-af-header-shrink {
+	height: 80px;}
+
+.cbp-af-header.cbp-af-header-shrink #nav a {
+	line-height: 60px;}
+
+
+    
+/* 04. HEADER SETTINGS ================================================== */
+
+
+
+#header {
+	background: url('../img/bgtesr.jpg')no-repeat center center fixed #353847; 
+	padding:190px 0 120px 0;
+	margin-top:50px;}
+
+#header h2 {color:#FFF;}
+
+
+#header .lead {
+	font: 16px 'latolight', sans-serif;
+	font-size:1.3rem;
+	color:#FFF;}  
+
+
+
+/* 05.WORKS SETTINGS ================================================== */
+
+
+
+/* Section */
+
+#works {
+	background: #f1f1f1; 
+	height:100%; 
+	padding: 40px 0;}
+
+/* Projects Grid */
+
+#projects_grid {
+    overflow: hidden;}
+
+.items {
+    clear: both;}
+
+.item {width:100%; height:100%;}
+
+.items img {
+    display: block;}
+    
+.items:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;}
+    
+.items a,
+.items a img {
+    display: block;
+    position: relative;}
+    
+.items a {
+    overflow: hidden;}
+    
+.items a div {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;}
+    
+.items a div h5 {
+    display: block;
+    margin: 40% 20px 0px 20px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 16px;
+    letter-spacing: 2px;
+	font-family: 'latobold', sans-serif;   
+    text-align: center;}
+    
+.items a div  span {
+    font-size: 14px;
+    display: block;
+    color: #ddd;
+    text-transform: uppercase;
+    letter-spacing: 2px;}
+
+/* Filter Function */
+
+.filter {
+    padding: 0;}
+    
+.filter li {
+	font-family: 'latoregular', sans-serif;
+    margin: 0;
+    background: none;
+    display: inline;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 15px;}
+    
+.filter li a:hover,
+.filter li a.active {
+    background-color: #F17C71;
+    border-bottom: 4px solid #E95855;
+    color: #FFF;}
+    
+.filter li a {
+    color: #4D4C4C;
+    display: inline-block;
+    background-color: #fFF;
+    border-bottom: 4px solid #e5e5e5;
+    padding: 6px 20px 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;}
+
+/* Expander of the works Settings */
+
+.slide_portfolio {
+	text-align:center;
+	display:none;
+	padding:10px 0;}
+
+/* Space between img */
+
+.slide_portfolio img{
+	padding: 20px 0;}
+
+/* Title of the Work */
+
+.slide_portfolio h3 {    
+	background: url("../img/line.gif") no-repeat scroll center 30px transparent;
+	color: #4D4C4C;
+	font: 16px 'latobold', sans-serif;
+	letter-spacing: 2px;
+	padding-bottom: 35px;
+    padding-top: 0px;
+	text-align: center;
+	text-transform: uppercase;}
+
+/* Close Icon */
+
+.slide_portfolio .closeit {
+	cursor: pointer;
+	margin-top:100px;
+	margin-bottom:0px;}
+
+/* ISOTOP OF WORKS ITEMS DONT TOUCH ! */
+
+@-moz-document url-prefix() { 
+
+}
+.isotope-item {
+    z-index: 2;
+    display: block !important;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: top, left, opacity;
+    transition-property: transform, opacity;
+}
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+
+
+/* 06. INTERSECTION SETTINGS ================================================== */
+
+
+
+/* Section */
+
+#interblock {
+	width: 100%; 
+	height: auto; 
+	background: #363B48;
+	padding:120px 0; }
+
+/* Blockquote */
+
+#interblock h2 {
+	font-size:1.75rem; 
+	color:#FFF;}
+
+/* Text under the Blockquote */
+
+#interblock p {
+	color:#FFF; 
+	font-size:1.3rem; 
+	font-family:'latolight', sans-serif;}
+
+/* Icon button */
+
+#interblock .buttongo {
+	font-size:50px; 
+	padding:30px 0; 
+	text-align: right;}
+
+#interblock .buttongo a {	
+	cursor: pointer;
+	-webkit-transition:all .25s cubic-bezier(0.25,0.46,0.45,0.94);
+	-moz-transition:all  .25s cubic-bezier(0.25,0.46,0.45,0.94);
+	-o-transition:all  .25s cubic-bezier(0.25,0.46,0.45,0.94);
+	transition:all  .25s cubic-bezier(0.25,0.46,0.45,0.94); }
+
+/* Hover Icon button */
+	
+#interblock .buttongo a:hover {
+	opacity: 0.7;}
+
+
+
+/* 07. SERVICES SETTINGS ================================================== */
+
+
+
+/* Section */
+
+#whatwedo {
+	padding:40px 0px 40px 0; 
+	background: #f1f1f1;}
+
+/* The Title of the service */
+
+#whatwedo h3{
+	background: none; 	
+	padding-bottom: 10px;
+	padding-top: 0px; 
+	text-align: left;}
+
+/* Make the img 100% */
+
+#whatwedo img {
+	width: 100%; 
+	padding:10px;}
+	
+/* Style of each service */
+
+#whatwedo .service {
+	background: #FFF;
+	border-bottom: 4px solid #e5e5e5;
+	margin-bottom: 20px;
+	padding:20px;}
+
+
+
+/* 08. TEAM SETTINGS ================================================== */
+
+
+
+/* About the annimation on hover of each member please refer to the hoverex-all.css file */
+
+/* Section */
+
+#team {
+	padding:20px 0px 40px 0; 
+	background: #f1f1f1;}
+
+/* Make the Picture 100% */
+
+#team img {
+	width: 100%;}
+
+/* Style of each member block */
+
+#team .member {
+	margin-top:20px; 
+	padding-bottom:20px; 
+	border-bottom:4px solid #e5e5e5; 
+	background: #fff;}
+
+/* Name of the member */
+
+#team .member h3 {
+  	background: none;
+	color: #4D4C4C;
+	font: 900 16 'latobold', sans-serif;
+	letter-spacing: 2px;
+	padding-bottom: 0px;
+	padding-top: 10px;
+	text-align: center;
+	text-transform: uppercase;}
+
+/* Job in the studio */
+
+#team .member h4 {
+	text-align: center;}
+
+
+
+/* 09. GET THE TEMPLATE INTERSECTION SETTINGS ================================================== */
+
+
+
+/* Section */
+
+#getit {
+	width: 100%; 
+	height: auto; 
+	background: #363B48;
+	padding:120px 0; }
+
+/* Quote align Center */
+
+#getit h2 {
+	text-align: center;
+	font-size:1.75rem; 
+	margin-bottom: 25px; 
+	color:#FFF;}
+
+
+
+/* 10. CONTACT SETTINGS ================================================== */
+
+
+
+/* Section */
+
+#contact {
+	padding:40px 0; 
+	background: #f1f1f1;}
+
+/* label */
+
+form {overflow:hidden}
+
+.contact form label {
+	float:left; 
+	padding-bottom: 5px;}
+		
+.contact form label span {
+	color:#D1D1D1;}
+	
+/* Input label & textarea setting */	
+
+.contact form input,
+.contact form textarea{
+		font-family: 'latoregular', sans-serif;
+		-moz-transition:all .3s ease-in-out;
+		-ms-transition:all .3s ease-in-out;
+		-o-transition:all .3s ease-in-out;
+		-webkit-transition:all .3s ease-in-out;
+		border: none;
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05) inset;
+		color: #333;
+		resize: vertical;
+		font-size:12px;
+		margin-bottom: 15px;
+		letter-spacing:1px;
+		padding: 9px 10px 8px;
+		transition:all .3s ease-in-out;
+		width:100%;}
+
+/* Set a height to the input */
+
+.contact form input{
+		height:40px;
+		resize: none;}
+
+/* Set a height to the textarea*/
+
+.contact form textarea{
+		min-height:150px;
+		padding-top: 10px;}
+	
+/* Button Send */
+
+.contact form .submit{
+		height:50px;
+		width: 150px;
+		font-family: 'latolight', sans-serif;
+		letter-spacing:1px;
+	    float: left;
+	    display: block;
+		border: none;
+	    cursor: pointer;
+	    font-size: 16px;
+	    color:#FFF;
+	    background: #a0cac0;
+	    border-bottom: 4px solid #68a697;
+	    -webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition: all 0.2s ease-in-out;
+	    -ms-transition: all 0.2s ease-in-out;
+	    -o-transition: all 0.2s ease-in-out;
+	    transition: all 0.2s ease-in-out;}
+
+/* Button Send Hover */
+
+.contact form .submit:hover{
+		background: #93b7ae;
+		cursor:pointer;}
+
+/* Input & textarea when there's something missing  */
+
+.contact form input:required,
+.contact form textarea:required{
+		background:#FFF url(../img/invalid.png);
+		background-position:98% 6px;
+		background-repeat:no-repeat;
+		box-shadow:inherit;}
+
+/* Input & textarea when valid */
+
+.contact form input:required:valid,
+.contact form textarea:required:valid{
+		background:#FFF url(../img/valid.png);
+		background-position:98% 6px;
+		border:1px solid #e5e5e5;
+		background-repeat:no-repeat;
+		color:#111;}
+
+/* Input & textarea when invalid */
+
+.contact form input:focus:invalid,
+.contact form textarea:focus:invalid{
+		background:#FFF url(../img/invalid-red.png) no-repeat 98% 6px;
+		border-color:#ec7e7e;
+		box-shadow:0 0 2px rgba(236,126,126,0.7);}
+
+
+
+/* 11. INTERBLOCK FOOTER SETTINGS ================================================== */
+
+
+
+/* Section */
+
+#interblock_footer { 
+	padding: 100px 0; 
+	background: #F17C71; 
+	color:#FFF;}
+
+/* Blockquote */
+
+#interblock_footer h2 {
+	font-size:1.75rem;  
+	color:#FFF;}
+
+/* Text under blockquote */
+
+#interblock_footer p {
+	color:#FFF; 
+	font-size:1.3rem; 
+	font-family: 'latolight', sans-serif;}
+
+/* Display inline the icon */
+
+#interblock_footer li{
+	display:inline;}
+
+/* Padding top for well displayed Icon */
+
+#interblock_footer ul {
+	padding:20px 0 0 0;}
+	
+/* Styling Icon */
+
+#interblock_footer .icon{ 
+	color:#FFF;
+	display:inline-block;
+	padding:10px  10px ;
+	font-style: normal; 
+	-webkit-transition:all .25s cubic-bezier(0.25,0.46,0.45,0.94);
+	-moz-transition:all  .25s cubic-bezier(0.25,0.46,0.45,0.94);
+	-o-transition:all  .25s cubic-bezier(0.25,0.46,0.45,0.94);
+	transition:all  .25s cubic-bezier(0.25,0.46,0.45,0.94); 
+	font-size: 50px; }
+
+/* Icon Hover */
+
+#interblock_footer .icon:hover {
+	opacity:0.7;}
+
+
+
+/* 12. FOOTER CONTACT INFO SETTINGS ================================================== */
+
+
+
+/* Section */
+
+#contact_info {
+	background: #e95855;
+	padding:30px;
+	color: #FFF;
+	text-transform: uppercase;}
+
+/* Color White without bottom Border */
+
+#contact_info a {
+	color:#FFF; 
+	border-bottom: none;}
+
+
+	
+/* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
+
+.mobile-menu {
+	display:none;
+	background: #FFF;
+	width:100%;
+	z-index: 99999999;
+	position: absolute;
+	top:0;
+	border-bottom: 1px solid #BBB;}
+	
+
+.mobile-menu .row {
+	background: #F5F5F5;
+	padding-top:10px;
+	padding-bottom: 10px;}
+	
+
+.mobile-menu-inner .nav-mobile li {
+	color: #4D4C4C;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	margin-top: 2%;
+	background-color: #fFF;
+	border-bottom: 4px solid #e5e5e5;
+	padding: 6px 20px 5px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;	}
+	
+
+.mobile-menu-inner .nav-mobile li:hover {
+	background-color: #F17C71;
+	border-bottom: 4px solid #E95855;	}
+	
+
+.mobile-menu-inner .nav-mobile li:hover a {
+	color: #fFF;	}
+	
+
+.mobile-menu-inner .nav-mobile li a {
+	display: block;
+	width:100%;
+	color: #4D4C4C;
+	text-transform:uppercase;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;	}
+	
+
+#collapse {
+	display:none;}
+
+
+.mobile-menu h3 {
+	background: url("../img/line.gif") no-repeat scroll center 55px transparent;
+	color: #4D4C4C;
+	font: 16px 'Lato', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 700;
+	padding-bottom: 35px;
+	padding-top: 25px;
+	text-align: center;
+	text-transform: uppercase;}
+
+
+/* Styling for mobile devices */
+
+
+@media screen and (max-width: 768px) {
+
+	/* Display the mobile menu */
+	
+	.mobile-menu {display:block;}	
+
+	form  { overflow:hidden; }
+	
+	/* Header Lower height & Color*/
+	
+	#header { margin-top: 0px; padding:150px 0 100px 0; background-color: #353847; }
+	
+	/* Not Showing the Navigation */
+
+	.cbp-af-header {display: none;}
+	
+	/* Align Center the interblock Text & Button */
+	
+	.container .interblock_footer , .container .interblock_footer .buttongo {text-align: center;}
+	
+	/* Lower height of the interblock footer */
+	
+	.container #interblock_footer {padding:0px 0 20px 0 ;}
+	
+	/* Not Showing the text on the interblock Footer */
+	
+	.container #interblock_footer p, #interblock_footer h2 {display: none;}
+	
+	/* Bigger Social Icon */
+	
+	#interblock_footer .icon { font-size: 40px; text-align: center; }
+	
+    #interblock_footer ul {text-align: center;}
+    
+    /* Align center the Contact Info footer text */
+    
+    #contact_info p {text-align: center;}
+    
+    /* 100% Width of works Items & IMG */
+    
+    #projects_grid .items .item {width: 100%; margin-left:0;}
+    
+    #projects_grid .items .item img {width:100%;}
+    
+    /* Lower margin-top for better scrolling */
+    
+    .slide_portfolio .closeit { cursor: pointer; margin-top:10px; margin-bottom:0px;}
+    
+    /* Padding on Portfolio Detail Text */
+    
+    #portfolio_detail p {padding: 0 20px;}
+    
+    /* Filter Function takes all the width */
+    
+    #projects_grid .filter li a { width: 100%; margin-top: 2%;}
+    
+    /* Team Row takes all the width */
+    
+    #team .row {width:100%;}
+    
+    /* 100% of the Member Pictures */
+    
+    .row .member img { width: 100%; height:auto; }
+    
+    /* Not Showing the interblock button Go To ( useless with iphone ) */
+                
+    .buttongo {display: none;}
+
+    /* Service Settings */
+    
+    .service .service {width:100%; margin-bottom: 2%; margin-top: 2%;}
+    
+    /* Align center the Title of each Service */
+    
+    .service .service h3 {text-align: center;}
+    
+    /* Don't show the Text of each Service ( too much for scrolling ) */
+    
+    .service .service p {display: none;}
+    
+    /* 100% Width of Each Service Picture */
+    
+    .service .service img {width:100%; }
+       
+}
+
+
+
+/* 14. MEDIA QUERIES FOR TABLET SETTINGS ================================================== */
+
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  {
+	
+
+	#projects_grid .items .item  {width:48%;}
+	
+	.service .service p {display: block;}
+	
+	.buttongo {display: block; cursor: pointer;}
+	
+	.interblock  {text-align: left;}
+	
+	/* Lower height of the interblock footer */
+	
+	.interblock_footer {padding:0px 0 20px 0 ;}
+	
+	/* Not Showing the text on the interblock Footer */
+		
+	.interblock_footer .eight.columns {display: none;}
+	
+	/* Bigger Social Icon & Align Center the Icon*/
+	
+	.interblock_footer .four.columns {width:100%; text-align: center;}
+	
+	.interblock_footer .icon { font-size: 40px;}
+		
+}
+
+.hidden {
+	display:none;
+}
+
+
